@@ -15,7 +15,11 @@
 grammar String;
 
 start
-	: (STRING|ANYCHAR)*
+	: (string|ANYCHAR)*
+	;
+
+string
+	: STRING
 	;
 
 STRING
@@ -34,14 +38,20 @@ ANYCHAR
 grammar String;
 
 start
-	: (STRING|.)*
+	: (string|.)*
+	;
+
+string
+	: STRING
 	;
 
 STRING
 	: '"' ('\\"' | .)*? '"'
 	;
 ```
+沒有定義 ANYCHAR
 
+<br>
 執行結果：
 ```
 line 1:0 token recognition error at: ' '
