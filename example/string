@@ -1,5 +1,5 @@
-
-```g4
+```python
+class FruitList:
 grammar Test;
 
 start : (string|ANYCHAR)*;
