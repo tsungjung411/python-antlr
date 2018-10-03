@@ -15,7 +15,7 @@ Here we provide some easy ANTLR examples.
   - 大寫開頭的識別字，表示 lexer(詞法分析器)，例如 Number, NUMBER, String, STRING, ANYCHAR, WS (表示 WhiteSpace)
   - 詞法分析器 lexical analyzer，簡稱 lexer
   - lexer 所定義的規則稱為 lexer rule
-  - lexer rule 不可以含有 parser (不可以含有變數)，否則會有編譯錯誤，此時應該當作 <br><br>
+  - lexer rule 不可以含有 parser (不可以含有變數)，否則會有編譯錯誤，此時應該當作 parser<br><br>
   
 - 串流(stream)
   - char stream -> lexer -> token stream -> parser -> tree
