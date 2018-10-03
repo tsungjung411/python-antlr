@@ -31,7 +31,9 @@ ANYCHAR
 	;
 ```
 
+<br>
 <hr>
+<br>
 
 ### 不合文法的 String.g4
 ```g4
@@ -65,7 +67,9 @@ line 2:15 token recognition error at: '\n'
 (start "123" "abc" "456" "\"xyz\"7890")
 ```
 
+<br>
 <hr>
+<br>
 
 ### 沒有使用 greedy quantifier '?' (貪婪量詞)
 ```g4
@@ -97,7 +101,9 @@ warning(131): Test.g4:12:18: greedy block ()* contains wildcard; the non-greedy 
 只辨識到一個 string
 
 
+<br>
 <hr>
+<br>
 
 ### 字串不能是以 'a' 開始
 ```g4
