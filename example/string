@@ -1,0 +1,19 @@
+
+```g4
+grammar Test;
+
+start : (string|ANYCHAR)*;
+
+
+string
+	: String
+	;
+
+String
+	: '"' ('\\"' | .)*? '"'
+	;
+
+ANYCHAR
+	: .
+	;
+```
