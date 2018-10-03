@@ -2,6 +2,18 @@ Here we provide some easy ANTLR examples.
 在這邊我們提供一些簡單的 ANTLR 範例。
 
 基本認知：
+- 特性：
+  - 使用 regex / reg-exp / regular expression 基本語法
+  - 與上下文無關的文法
+    - 意思是結構當下就決定，不會因為前後關係而產生結構變化
+    - 全台大停電："全台/大/停電", "全/台大/停電"
+    - 當天才知道："當天/才/知道", "當/天才/知道"
+    - 漁民捕魚的地方：
+      - (漁民 n.)/(捕魚 v.) -> 打中 adj = n. + v. + '的' (形容詞規則)
+      - (漁民 n.)/(捕魚 n.) -> 打中 n. = n. + n (複合名詞規則) -> 執行沒有意義
+      - 從字面上無法決定結構，幣需要在根據詞彙意義進行組裝
+      - 所以 ANTLR 並無法處理「上下文有關」的語法
+
 - 檔案：
   - 檔名：```Xxx.g4```
   - 內部的 grammer 宣告為：```Grammar Xxx;```  （概念同 Java, 主 class 名稱與檔名必須一致）
@@ -24,4 +36,4 @@ Here we provide some easy ANTLR examples.
 - 串流(stream)
   - char stream -> lexer -> token stream -> parser -> tree
   - 輸入字元(char) -> lexer(詞法分析器) -> 輸出標記(token)
-  - 輸入標記(token) -> psrser(語法分析器) -> 輸出標記的結構樹(tree)
+  - 輸入標記(token) -> psrser(語法分析器) -> 輸出標記的結構樹(token tree)
