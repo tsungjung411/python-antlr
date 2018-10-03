@@ -9,8 +9,9 @@
 ```g4
 grammar String;
 
-start : (string|ANYCHAR)*;
-
+start
+	: (string|ANYCHAR)*
+	;
 
 string
 	: String
@@ -23,7 +24,6 @@ String
 ANYCHAR
 	: .
 	;
-
 ```
 
 ### Results:
