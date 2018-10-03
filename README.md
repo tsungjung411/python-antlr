@@ -1,4 +1,4 @@
-Here we provide some easy ANTLR examples.
+Here we provide some simple ANTLR examples.
 在這邊我們提供一些簡單的 ANTLR 範例。
 
 基本認知：
