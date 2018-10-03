@@ -52,6 +52,7 @@ STRING
 沒有定義 ANYCHAR
 
 <br>
+
 執行結果：
 ```
 line 1:0 token recognition error at: ' '
