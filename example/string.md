@@ -32,15 +32,11 @@ ANYCHAR
 grammar String;
 
 start
-	: (STRING|ANYCHAR)*
+	: (STRING|.)*
 	;
 
 STRING
 	: '"' ('\\"' | .)*? '"'
-	;
-
-ANYCHAR
-	: .
 	;
 ```
 
