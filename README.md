@@ -50,6 +50,7 @@ Here we provide some simple ANTLR examples.
 ### 參考資料
  - [[wiki] 詞法分析](https://zh.wikipedia.org/zh-tw/%E8%AF%8D%E6%B3%95%E5%88%86%E6%9E%90)
  - [[wiki] 語法分析器](https://zh.wikipedia.org/wiki/%E8%AA%9E%E6%B3%95%E5%88%86%E6%9E%90%E5%99%A8)
+ - [ANTLR Examples for Python](https://github.com/jszheng/py3antlr4book)
 
 ### 正規表達式
  - [貪婪、勉強、獨占量詞的差別](https://www.cnblogs.com/ggicci/archive/2012/09/18/2690804.html)
