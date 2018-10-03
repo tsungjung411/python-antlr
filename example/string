@@ -1,19 +1,26 @@
+程式碼
 ```python
 class FruitList:
-grammar Test;
+    __name_list = []
+    
+    def append(self, name):
+        self.__name_list.append(name)
+    # end-of-def
+    
+    def __repr__(self):
+        return repr(self.__name_list)
+    # end-of-def
+# end-of_class
 
-start : (string|ANYCHAR)*;
+a = FruitList()
+a.append('apple')
+a.append('banana')
+a.append('cherry')
+print(a)
 
-
-string
-	: String
-	;
-
-String
-	: '"' ('\\"' | .)*? '"'
-	;
-
-ANYCHAR
-	: .
-	;
+b = FruitList()
+b.append('apple')
+b.append('banana')
+b.append('cherry')
+print(b)
 ```
