@@ -46,3 +46,4 @@ Here we provide some simple ANTLR examples.
 
 ### 正規表達式
  - [貪婪、勉強、獨占量詞的差別](https://www.cnblogs.com/ggicci/archive/2012/09/18/2690804.html)
+ - [Java 正規表達式](https://docs.oracle.com/javase/7/docs/api/java/util/regex/Pattern.html)
