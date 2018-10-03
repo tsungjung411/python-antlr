@@ -37,3 +37,9 @@ Here we provide some easy ANTLR examples.
   - char stream -> lexer -> token stream -> parser -> tree
   - 輸入字元(char) -> lexer(詞法分析器) -> 輸出標記(token)
   - 輸入標記(token) -> psrser(語法分析器) -> 輸出標記的結構樹(token tree)
+
+<br>
+
+### 參考資料
+ - [[wiki] 詞法分析](https://zh.wikipedia.org/zh-tw/%E8%AF%8D%E6%B3%95%E5%88%86%E6%9E%90)
+ - [[wiki] 語法分析器](https://zh.wikipedia.org/wiki/%E8%AA%9E%E6%B3%95%E5%88%86%E6%9E%90%E5%99%A8)
