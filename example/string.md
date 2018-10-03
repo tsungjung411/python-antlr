@@ -5,6 +5,11 @@
   "\"xyz\"7890"
 ```
 
+### Results:
+```
+(start   (string "123")   (string "abc")   (string "456") \n     (string "\"xyz\"7890") \n)
+```
+
 ### ANTLR: String.g4
 ```g4
 grammar String;
@@ -24,9 +29,4 @@ String
 ANYCHAR
 	: .
 	;
-```
-
-### Results:
-```
-(start   (string "123")   (string "abc")   (string "456") \n     (string "\"xyz\"7890") \n)
 ```
