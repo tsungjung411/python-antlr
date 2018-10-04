@@ -5,7 +5,7 @@
 grammar String;
 
 start
-	: (string|.)*
+	: (string|.)* EOF
 	;
 
 string
@@ -22,7 +22,7 @@ STRING
 
 **編譯訊息：**
 ```
-warning(131): Test.g4:4:13: greedy block ()* contains wildcard; 
+warning(131): String.g4:4:13: greedy block ()* contains wildcard; 
     the non-greedy syntax ()*? may be preferred
 ```
  - 即使將 ```(string|.)*``` 改成 ```(string|.)*?```，錯誤結果仍一樣
@@ -31,15 +31,13 @@ warning(131): Test.g4:4:13: greedy block ()* contains wildcard;
 
 **執行結果：**
 ```
-line 1:0 token recognition error at: ' '
-line 1:6 token recognition error at: ' '
-line 1:12 token recognition error at: ' '
-line 1:18 token recognition error at: '\n'
+line 1:5 token recognition error at: ' '
+line 1:11 token recognition error at: ' '
+line 1:17 token recognition error at: '\n'
 line 2:0 token recognition error at: ' '
-line 2:1 token recognition error at: ' '
-line 2:15 token recognition error at: ' '
-line 2:18 token recognition error at: '\n'
-(start (string "123") (string "abc") (string "456") (string "\"xyz\"7890") (string ""))
+line 2:14 token recognition error at: ' '
+line 2:17 token recognition error at: '\n'
+(start (string "123") (string "abc") (string "456") (string "\"xyz\"7890") (string "") <EOF>)
 ```
 
 - parser 除了處理 變數(parser rule) 和 字元(char) (e.g. '"', '[', ']')
