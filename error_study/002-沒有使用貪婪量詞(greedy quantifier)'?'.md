@@ -1,0 +1,42 @@
+
+### 不合文法的 [String.g4](../example/string.md)
+
+```g4
+grammar String;
+
+start
+	: (string|ANYCHAR)* EOF
+	;
+
+string
+	: STRING
+	;
+
+STRING
+	: '"' ('\\"' | .)* '"'
+	;
+
+ANYCHAR
+	: .
+	;
+```
+STRING 規則裡，沒有使用 「貪婪量詞 (greedy quantifier) '?'」
+
+<br>
+
+**編譯訊息：**
+```
+warning(131): String.g4:4:13: greedy block ()* contains wildcard; 
+    the non-greedy syntax ()*? may be preferred
+```
+ - 即使將 ```(string|.)*``` 改成 ```(string|.)*?```，執行結果仍一樣
+
+<br>
+
+**執行結果：**
+```
+(start (string "123" "abc" "456"\n "\"xyz\"7890" "") \n <EOF>)
+```
+
+- 只辨識到一個 string
+- 因為使用貪婪模式(*)， * 把所有的字元都吃掉，也就是盡可能地找到最長匹配
