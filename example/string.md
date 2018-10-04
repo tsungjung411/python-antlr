@@ -32,7 +32,7 @@ ANYCHAR
 ```
 
 ### Error Study
-[沒有定義 ANYCHAR](../001-沒有定義 ANYCHAR.md)
+[沒有定義 ANYCHAR](../error_study/001-沒有定義%20ANYCHAR.md)
 
 <br>
 <hr>
