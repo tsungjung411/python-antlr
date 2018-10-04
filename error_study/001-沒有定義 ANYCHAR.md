@@ -16,19 +16,20 @@ STRING
 	: '"' ('\\"' | .)*? '"'
 	;
 ```
-沒有定義 ANYCHAR
+沒有定義 ANYCHA
 
 <br>
 
-編譯訊息：
+**編譯訊息：**
 ```
 warning(131): Test.g4:4:13: greedy block ()* contains wildcard; 
     the non-greedy syntax ()*? may be preferred
 ```
+ - 即使將 ```string|.)*``` 改成 ```string|.)*?```，錯誤結果仍一樣
 
 <br>
 
-執行結果：
+**執行結果：**
 ```
 line 1:0 token recognition error at: ' '
 line 1:6 token recognition error at: ' '
