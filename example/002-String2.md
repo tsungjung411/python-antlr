@@ -1,5 +1,5 @@
 
-### [001-String.md] 的加強版
+### [001-String.md](./001-String.md) 的加強版
 
 ### ANTLR: String.g4
 ```g4
