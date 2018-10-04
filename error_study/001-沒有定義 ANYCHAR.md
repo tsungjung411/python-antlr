@@ -20,6 +20,14 @@ STRING
 
 <br>
 
+編譯訊息：
+```
+warning(131): Test.g4:4:13: greedy block ()* contains wildcard; 
+    the non-greedy syntax ()*? may be preferred
+```
+
+<br>
+
 執行結果：
 ```
 line 1:0 token recognition error at: ' '
