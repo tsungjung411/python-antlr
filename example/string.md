@@ -33,40 +33,8 @@ ANYCHAR
 
 ### Error Study
  - [沒有定義 ANYCHAR](../error_study/001-沒有定義%20ANYCHAR.md)
-
-<br>
-<hr>
-<br>
-
-### 沒有使用 greedy quantifier '?' (貪婪量詞)
-```g4
-grammar String;
-
-start
-	: (string|ANYCHAR)*
-	;
-
-string
-	: STRING
-	;
-
-STRING
-	: '"' ('\\"' | .)* '"'
-	;
-
-ANYCHAR
-	: .
-	;
-```
-
-執行結果：
-```
-warning(131): Test.g4:12:18: greedy block ()* contains wildcard; the non-greedy syntax ()*? may be preferred
-
-(start   (string "123" "abc" "456"\n  "\"xyz\"7890") \n)
-```
-只辨識到一個 string
-
+ - [沒有使用貪婪量詞'?'](../error_study/002-沒有使用貪婪量詞'%3F'.md)
+ 
 
 <br>
 <hr>
