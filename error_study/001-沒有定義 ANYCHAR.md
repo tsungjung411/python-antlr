@@ -1,5 +1,5 @@
 
-### 不合文法的 [String.g4](../example/001-string.md)
+### 不合文法的 [String.g4](../example/001-String.md)
 
 ```g4
 grammar String;
