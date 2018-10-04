@@ -35,7 +35,7 @@ ANYCHAR
 <hr>
 <br>
 
-### 不合文法的 String.g4
+### [ErrorStudy] 不合文法的 String.g4
 ```g4
 grammar String;
 
@@ -66,6 +66,7 @@ line 2:1 token recognition error at: ' '
 line 2:15 token recognition error at: '\n'
 (start "123" "abc" "456" "\"xyz\"7890")
 ```
+parser 除了處理 變數(parser rule) 和 字元(char) (e.g. '"', '[', ']')，並不處理萬用字元(wildcard)，所以會直接丟出 error
 
 <br>
 <hr>
