@@ -39,9 +39,11 @@ Here we provide some simple ANTLR examples.
   - 輸入標記(token) -> psrser(語法分析器) -> 輸出標記的結構樹(token tree)
 
 - 正規表達式 (Regex)
-  - 預設模式：貪婪模式(greedy quantifier)
+  - 預設模式：
+    - 貪婪模式(greedy quantifier)
   - 有支援：
     - 勉強模式(reluctant quantifier)
+    - 亦即，非貪婪模式 -> the non-greedy syntax ```()*?```
   - 不支援：
     - 獨占模式(possessive quantifier)
     - 不支援字元否定[^]，改用 ~ (not 運算子)<br>(~x operator matches anything but x)
