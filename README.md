@@ -44,9 +44,9 @@ Here we provide some simple ANTLR examples.
 
 - 正規表達式 (Regex)
   - 預設模式：
-    - 貪婪模式(greedy quantifier)
+    - 貪婪量詞(greedy quantifier)
   - 有支援：
-    - 勉強模式(reluctant quantifier)
+    - 勉強量詞(reluctant quantifier)
     - 亦即，非貪婪模式 -> the non-greedy syntax ```()*?```
   - 不支援：
     - 獨占模式(possessive quantifier)
