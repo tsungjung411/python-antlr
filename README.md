@@ -1,5 +1,9 @@
 Here we provide some simple ANTLR examples.
-在這邊我們提供一些簡單的 ANTLR 範例。
+<br>在這邊我們提供一些簡單的 ANTLR 範例。
+
+使用版本：antlr-4.7.1-complete.jar
+
+<br>
 
 基本認知：
 - 特性：
