@@ -40,5 +40,5 @@ line 2:17 token recognition error at: '\n'
 (start (string "123") (string "abc") (string "456") (string "\"xyz\"7890") (string "") <EOF>)
 ```
 
-- parser 除了處理 變數(parser rule) 和 字元(char) (e.g. '"', '[', ']')
+- parser 除了處理 變數(parser-rule identifier) 和 字元(char) (e.g. '"', '[', ']')
 - 並不處理萬用字元(wildcard)，所以會直接丟出 error
