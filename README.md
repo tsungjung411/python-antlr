@@ -22,7 +22,7 @@ Here we provide some simple ANTLR examples.
   - parser 變數
     - 小寫開頭的識別字，表示 parser (語法分析器)
     - 例如 number, string, classBody, xABC
-    - 語法分析器 syntactic analyzer，簡稱 parser
+    - 語法分析器 syntactic analyzer，以 parser 來稱呼
     - parser 所定義的規則稱為 parser rule
     - parser rule 不可以是純字元，否則會有編譯錯誤，此時應該當作 lexer<br><br>
     
