@@ -36,8 +36,9 @@ line 1:12 token recognition error at: ' '
 line 1:18 token recognition error at: '\n'
 line 2:0 token recognition error at: ' '
 line 2:1 token recognition error at: ' '
-line 2:15 token recognition error at: '\n'
-(start "123" "abc" "456" "\"xyz\"7890")
+line 2:15 token recognition error at: ' '
+line 2:18 token recognition error at: '\n'
+(start (string "123") (string "abc") (string "456") (string "\"xyz\"7890") (string ""))
 ```
 
 - parser 除了處理 變數(parser rule) 和 字元(char) (e.g. '"', '[', ']')
