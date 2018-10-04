@@ -25,7 +25,7 @@ STRING
 warning(131): Test.g4:4:13: greedy block ()* contains wildcard; 
     the non-greedy syntax ()*? may be preferred
 ```
- - 即使將 ```string|.)*``` 改成 ```string|.)*?```，錯誤結果仍一樣
+ - 即使將 ```(string|.)*``` 改成 ```(string|.)*?```，錯誤結果仍一樣
 
 <br>
 
