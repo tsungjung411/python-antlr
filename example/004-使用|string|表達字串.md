@@ -57,3 +57,29 @@ ANYCHAR
 - 同 [002-String.md](../example/002-String.md)
 - 將 ```.``` 換成 ```~[|]```
 
+<br>
+
+### ANTLR: String.g4 (第三種解法)
+```g4
+grammar String;
+
+start
+	: (string|ANYCHAR)* EOF
+	;
+
+string
+	: STRING
+	;
+
+STRING
+	: '|' ('\\\u007c' | ~[\u007c])*? '|'
+	;
+
+ANYCHAR
+	: .
+	;
+```
+- 同 [003-String.md](../example/003-String.md)
+- 將 ```|``` 換成 ```\u007c```
+
+
