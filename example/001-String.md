@@ -32,7 +32,7 @@ ANYCHAR
 ```
 
 ### Error Study
- - [沒有定義 ANYCHAR](../error_study/001-沒有定義%20ANYCHAR.md)
+ - [parser不處理萬用字元](../error_study/001-parser不處理萬用字元.md)
  - [沒有使用貪婪量詞'?'](../error_study/002-沒有使用貪婪量詞'%3F'.md)
  
 
