@@ -43,3 +43,24 @@ line 2:17 token recognition error at: '\n'
 
 - parser 除了處理 變數(parser-rule identifier) 和 字元(char) (e.g. '"', '[', ']')
 - 並**不處理萬用字元(wildcard)**，所以會直接丟出 error
+
+<br>
+
+```g4
+grammar String;
+
+start
+	: (string|.)* EOF
+	;
+
+string
+	: stringBody
+	;
+
+stringBody
+	: '"' ('\\"' | .)*? '"'
+	;
+```
+- 取自  [String.g4](../example/001-String.md)
+- 把 STRING 改名成 stringBody
+- stringBody 雖然有萬用字元，但是它是搭配 reluctant quantifier，這樣好像就 OK
