@@ -16,7 +16,8 @@ STRING
 	: '"' ('\\"' | .)*? '"'
 	;
 ```
-沒有定義 ANYCHA
+* ```start``` parser rule 使用了萬用字元
+* i.e. 沒有定義 ANYCHA
 
 <br>
 
