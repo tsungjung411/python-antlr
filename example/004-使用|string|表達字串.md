@@ -34,7 +34,7 @@ ANYCHAR
 
 <br>
 
-### ANTLR: String.g4 (第三種解法)
+### ANTLR: String.g4 (第二種解法)
 ```g4
 grammar String;
 
@@ -56,6 +56,3 @@ ANYCHAR
 ```
 - 同 [002-String.md](../example/002-String.md)
 
-STRING
-	: '|' ('\\|' | ~[|])*? '|'
-	;
