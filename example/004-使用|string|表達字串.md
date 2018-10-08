@@ -55,4 +55,5 @@ ANYCHAR
 	;
 ```
 - 同 [002-String.md](../example/002-String.md)
+- 將 ```.``` 換成 ```~[|]```
 
