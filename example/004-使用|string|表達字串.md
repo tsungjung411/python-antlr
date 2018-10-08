@@ -30,4 +30,4 @@ ANYCHAR
 	: .
 	;
 ```
-- 同 [001-String.md](../001-String.md)
+- 同 [001-String.md](../example001-String.md)
