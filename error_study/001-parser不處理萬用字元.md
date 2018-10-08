@@ -50,7 +50,7 @@ line 2:17 token recognition error at: '\n'
 grammar String;
 
 start
-	: (string|.)* EOF
+	: (string|ANYCHAR)* EOF
 	;
 
 string
@@ -59,6 +59,10 @@ string
 
 stringBody
 	: '"' ('\\"' | .)*? '"'
+	;
+
+ANYCHAR
+	: .
 	;
 ```
 - 取自  [String.g4](../example/001-String.md)
